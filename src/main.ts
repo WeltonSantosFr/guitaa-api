@@ -8,6 +8,9 @@ async function bootstrap() {
   // Enable CORS for requests from http://localhost:5173
   app.enableCors({
     origin: 'http://localhost:5173',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
   });
 
   // Enable global validation with strict options
