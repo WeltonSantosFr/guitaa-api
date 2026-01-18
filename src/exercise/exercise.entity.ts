@@ -17,6 +17,9 @@ export class Exercise {
   @Column()
   name: string;
 
+  @Column({ nullable: true })
+  bpmGoal: number;
+
   @Column({ default: 10 })
   durationMinutes: number;
 

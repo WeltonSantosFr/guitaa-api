@@ -46,6 +46,7 @@ describe('ExerciseService', () => {
         name: 'Test Exercise',
         durationMinutes: 15,
         currentBpmRecord: 120,
+        bpmGoal: 140,
       };
       const userId = 'user-uuid';
 

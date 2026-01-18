@@ -14,4 +14,9 @@ export class UpdateExerciseDto {
   @IsNumber()
   @Min(0)
   currentBpmRecord?: number;
+
+  @IsOptional()
+  @IsNumber()
+  @Min(0)
+  bpmGoal?: number;
 }

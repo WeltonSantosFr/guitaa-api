@@ -62,6 +62,9 @@ export class ExerciseService {
     if (updateExerciseDto.currentBpmRecord !== undefined) {
       exercise.currentBpmRecord = updateExerciseDto.currentBpmRecord;
     }
+    if (updateExerciseDto.bpmGoal !== undefined) {
+      exercise.bpmGoal = updateExerciseDto.bpmGoal;
+    }
 
     return this.exerciseRepository.save(exercise);
   }
